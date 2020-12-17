@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AARegistration system PHP and MySQL</title>
+	<title>AA2Registration system PHP and MySQL</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
