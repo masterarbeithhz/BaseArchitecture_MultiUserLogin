@@ -49,7 +49,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "kubmanifest.yaml", kubeconfigId: "mykubeconfig1")
+          kubernetesDeploy(configs: "kubmanifest.yaml", kubeconfigId: "crafty-sound-297315")
         }
       }
     }
