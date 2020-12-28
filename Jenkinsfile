@@ -5,6 +5,10 @@ pipeline {
     imagefolder = "masterarbeithhz/microservices:"
     imagetag = "multiuserlogin${env.BUILD_ID}"
     giturl = 'https://github.com/masterarbeithhz/BaseArchitecture_MultiUserLogin.git'
+    PROJECT_ID = 'crafty-sound-297315'
+    CLUSTER_NAME = 'gke-cluster-1-default-pool-ac8d8b23-26dm'
+    LOCATION = 'us-central1-c	'
+    CREDENTIALS_ID = 'gke'
   }
   
   agent any
