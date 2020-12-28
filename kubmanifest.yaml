@@ -23,7 +23,7 @@ spec:
   rules:
   - http:
       paths:
-        - path: /login/(.*)
+        - path: /login/.*
           backend:
             serviceName: login-service
             servicePort: 80
