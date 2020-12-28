@@ -26,6 +26,7 @@ RUN mkdir /var/www/js
 EXPOSE 80
 
 # Copy this repo into place.
+RUN rm /var/www/html/*
 COPY image_files /var/www/html/
 
 # Update the default apache site with the config we created.
