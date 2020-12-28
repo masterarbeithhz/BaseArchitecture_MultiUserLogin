@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-name: login-service
-labels:
-  app: login
+  name: login-service
+  labels:
+    app: login
 spec:
-ports:
-  - port: 80
-    targetPort: 80
-selector:
-  app: login
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: login
 type: LoadBalancer
 ---
 #Definition Reverse-Proxy für einen Service
