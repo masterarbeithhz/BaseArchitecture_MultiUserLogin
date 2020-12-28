@@ -8,7 +8,7 @@ pipeline {
     PROJECT_ID = 'crafty-sound-297315'
     CLUSTER_NAME = 'gke-cluster-1-default-pool-ac8d8b23-26dm'
     LOCATION = 'us-central1-c	'
-    CREDENTIALS_ID = 'gke'
+    CREDENTIALS_ID = 'crafty-sound-297315'
   }
   
   agent any
