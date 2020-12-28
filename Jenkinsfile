@@ -6,7 +6,7 @@ pipeline {
     imagetag = "multiuserlogin${env.BUILD_ID}"
     giturl = 'https://github.com/masterarbeithhz/BaseArchitecture_MultiUserLogin.git'
     PROJECT_ID = 'crafty-sound-297315'
-    CLUSTER_NAME = 'gke-cluster-1-default-pool-ac8d8b23-grp'
+    CLUSTER_NAME = 'gke_crafty-sound-297315_us-central1-c_cluster-1'
     LOCATION = 'us-central1-c'
     CREDENTIALS_ID = 'crafty-sound-297315'
   }
