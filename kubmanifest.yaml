@@ -30,6 +30,28 @@ spec:
       containers:
       - name: login
         image: JSVAR_DOCKERIMAGE  
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /health
+            port: 80
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 60
+          successThreshold: 1
+          timeoutSeconds: 10
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /health
+            port: 80
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 60
+          successThreshold: 1
+          timeoutSeconds: 10
+        ports:
+        - containerPort: 80
 ---
 #Definition Reverse-Proxy für einen  Service
 apiVersion: networking.k8s.io/v1beta1
