@@ -38,13 +38,13 @@ kind: Service
 metadata:
   name: login-service
 spec:
-  type: NodePort
+#  type: NodePort
   selector:
     app: login
   ports:
-  - protocol: TCP
-    port: 60001
-    targetPort: 80
+  - protocol: http
+    port: 80
+#    targetPort: 80
 ---
 #Definition Reverse-Proxy für einen Service
 apiVersion: networking.k8s.io/v1beta1
@@ -61,7 +61,7 @@ spec:
         - path: /login
           backend:
             serviceName: login-service
-            servicePort: 60001
+            servicePort: 80
 
 
 
