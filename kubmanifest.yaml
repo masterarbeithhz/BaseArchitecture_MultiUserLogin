@@ -45,7 +45,7 @@ spec:
   - protocol: TCP
     port: 60000
     targetPort: 80
----
+#---
 #Definition Reverse-Proxy für einen Service
 #apiVersion: networking.k8s.io/v1beta1
 #kind: Ingress
