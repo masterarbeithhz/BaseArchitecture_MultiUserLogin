@@ -28,7 +28,7 @@ EXPOSE 80
 # Copy this repo into place.
 RUN rm /var/www/html/*
 COPY image_files /var/www/html/
-COPY 000-default.conf /etc/apache2/sites-available/
+COPY dir.conf /etc/apache2/mods-enabled/
 
 # Update the default apache site with the config we created.
 #ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
