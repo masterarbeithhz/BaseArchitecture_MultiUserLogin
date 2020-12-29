@@ -52,8 +52,8 @@ kind: Ingress
 metadata:
   name: login-ingress
   annotations:
-    #ingress.kubernetes.io/rewrite-target: /
-    kubernetes.io/ingress.class: gce
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    #kubernetes.io/ingress.class: gce
 spec:
   rules:
   - http:
