@@ -42,7 +42,7 @@ spec:
   selector:
     app: login
   ports:
-  - protocol: http
+  - protocol: TCP
     port: 80
 #    targetPort: 80
 ---
