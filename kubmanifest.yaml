@@ -52,13 +52,13 @@ kind: Ingress
 metadata:
   name: login-ingress
   annotations:
-#    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    kubernetes.io/rewrite-target: /$1
     kubernetes.io/ingress.class: gce
 spec:
   rules:
   - http:
       paths:
-        - path: /login
+        - path: /login/(.*)
           backend:
             serviceName: login-service
             servicePort: 80
