@@ -38,12 +38,12 @@ kind: Service
 metadata:
   name: login-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: login
   ports:
   - protocol: TCP
-    port: 60000
+    port: 60001
     targetPort: 80
 ---
 #Definition Reverse-Proxy für einen Service
@@ -61,7 +61,7 @@ spec:
         - path: /login
           backend:
             serviceName: login-service
-            servicePort: 60000
+            servicePort: 60001
 
 
 
