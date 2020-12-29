@@ -17,7 +17,7 @@ spec:
       containers:
       - name: login
         image: JSVAR_DOCKERIMAGE
-        livenessProbe:
+    livenessProbe:
       httpGet:
         path: /
         port: 80
@@ -44,7 +44,7 @@ spec:
     targetPort: 80
 ---
 #Definition Reverse-Proxy für einen Service
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: login-ingress
