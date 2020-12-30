@@ -1,11 +1,11 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
   name: login
   labels:
     app: login
 spec:
-  replicas: 1
+ # replicas: 1
   selector:
     matchLabels:
       app: login
