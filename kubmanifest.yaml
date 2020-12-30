@@ -5,22 +5,17 @@ metadata:
   labels:
     app: login
 spec:
- # replicas: 1
   selector:
     matchLabels:
       app: login
-  template:
-    metadata:
-      labels:
-        app: login
-    spec:
-      containers:
-      - name: login
-        image: JSVAR_DOCKERIMAGE
-        resources:
-          cpu: "100m"
-        limits:
-          cpu: "200m"
+  containers:
+  - name: login
+    image: JSVAR_DOCKERIMAGE
+    resources:
+      resources:
+        cpu: "100m"
+      limits:
+        cpu: "200m"
 ---
 apiVersion: v1
 kind: Service
