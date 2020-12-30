@@ -12,7 +12,7 @@ spec:
   - name: login
     image: JSVAR_DOCKERIMAGE
     resources:
-      resources:
+      requests:
         cpu: "100m"
       limits:
         cpu: "200m"
