@@ -17,21 +17,10 @@ spec:
       containers:
       - name: login
         image: JSVAR_DOCKERIMAGE
-#        livenessProbe:
-#          httpGet:
-#            path: /login/test.php
-#            port: 80
-#          initialDelaySeconds: 3
-#          periodSeconds: 3
-#        readinessProbe:
-#          httpGet:
-#            path: /login/test.php
-#            port: 80
-#          initialDelaySeconds: 3
-#          periodSeconds: 3
-#        ports:
-#        - name: login
-#          containerPort: 80
+        resources:
+          cpu: "100m"
+        limits:
+          cpu: "200m"
 ---
 apiVersion: v1
 kind: Service
