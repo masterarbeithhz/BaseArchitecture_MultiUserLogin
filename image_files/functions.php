@@ -157,7 +157,7 @@ function login(){
 				$_SESSION['user'] = $logged_in_user;
 				$_SESSION['success']  = "You are now logged in";
 
-				header('location: ' .URL.'/homepage/homepage.php'); yyy
+				header('location: ' .URL.'/homepage/homepage.php');
 			}
 		}else {
 			array_push($errors, "Wrong username/password combination");
