@@ -1,4 +1,7 @@
-<?php include('functions.php') ?>
+<?php 
+include('functions.php'); 
+include("envVariables.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +29,7 @@
 		</div>
 		<p>
 			Not yet a member? <a href="register.php">Sign up</a>
+			Not yet a member? <a href="<?php echo URL.'signon/register.php'?>"> Sign up </a>
 		</p>
 	</form>
 </body>
